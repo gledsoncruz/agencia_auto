@@ -280,6 +280,7 @@ public class FrmModelo extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
 
         this.modelo.setDescricao(txtDescricao.getText());
+        this.modelo.setMarca((Marca) cbMarca.getSelectedItem());
         this.modeloDao.alterar(this.modelo);
         // Recarrego a lista de modelos
         this.modelos = modeloDao.carregarTodos();
